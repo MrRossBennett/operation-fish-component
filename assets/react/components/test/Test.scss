@@ -1,0 +1,19 @@
+@import './assets/css/utils/variables';
+@import './assets/css/utils/rems';
+@import './assets/css/utils/mixins';
+@import './assets/css/base/colors';
+@import './assets/css/base/fonts';
+
+.test {
+    svg {
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+
+    position: relative;
+    color: $black;
+    @include fsBody;
+    @include fontSize(18px);
+    line-height: $baseLineHeight;
+}
